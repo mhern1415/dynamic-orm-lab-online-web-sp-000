@@ -25,10 +25,7 @@ class InteractiveRecord
     end
   end
 
-  # ORM Methods
-
-  # SAVE - INSERT INTO students(name, grade) VALUES (x, y)
-
+ 
   def save
     sql = <<-SQL
       INSERT INTO #{table_name_for_insert}(#{col_names_for_insert})
